@@ -1,4 +1,238 @@
-html {
+* {
     margin: 0;
     padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100%;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+}
+
+.headerContainer {
+    width: 1500px;
+    margin: auto;
+    background-color: white;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.siteLogo {
+    width: 104px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.navMenu {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 50px;
+}
+
+.menus {
+    display: flex;
+}
+
+.menus ul {
+    list-style: none;
+    display: flex;
+    gap: 56px;
+}
+
+.menus ul a {
+    text-decoration: none;
+    transition-duration: .3s;
+    color: black;
+}
+
+.menus ul li {
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+}
+
+.active {
+    color: #FE6600 !important;
+    font-weight: 700;
+}
+
+.menus ul a:hover {
+    color: #FE6600;
+    transition-duration: .3s;
+}
+
+#contactBtn {
+    padding: 10px 35px;
+    background-color: #FE6600;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.hero {
+    width: 100%;
+    height: 90vh;
+}
+
+.heroContainer {
+    width: 73%;
+    height: 100%;
+    margin: auto;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+.unlockYour {
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.bpContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.brands, .potential {
+    position: relative;
+    flex: 1;
+}
+
+.brands span, .potential span {
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.brandsHL, .potentialHL {
+    width: 100%;
+    height: 35px;
+    background-color: #FE6600;
+    position: absolute;
+    bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+    .headerContainer {
+        display: block;
+        width: 95%;
+        height: 8vh;
+    }
+
+    .logo {
+        width: 100%;
+        height: 100%;
+    }
+
+    .hamburger {
+        display: block;
+        width: 35px;
+        transition-duration: .3s;
+    }
+
+    .hamburger:hover {
+        cursor: pointer;
+        transition-duration: .3s;
+    }
+
+    .rotate {
+        transform: rotate(225deg);
+    }
+
+    .siteLogo {
+        width: 85px;
+    }
+
+    .navMenu {
+        background-color: black;
+        width: 0%;
+        position: absolute;
+        right: 0;
+        display: block;
+        height: 40vh;
+        padding-top: 88px;
+        padding-left: 0px;
+        overflow: hidden;
+        transition-duration: .3s;
+    }
+
+    .showNav {
+        display: block;
+        transition-duration: .3s;
+        width: 40%;
+        padding-left: 26px;
+    }
+
+    .menus ul {
+        flex-direction: column;
+        gap: 37px;
+    }
+
+    .menus ul a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .menus ul li {
+        font-size: 14px;
+        color: white;
+    }
+
+    #contactBtn {
+        margin-top: 37px;
+        border-radius: 0px;
+        font-size: 14px;
+    }
 }
