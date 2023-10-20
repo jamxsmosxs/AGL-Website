@@ -7,6 +7,7 @@
 body {
     width: 100%;
     overflow: hidden;
+    user-select: none;
 }
 
 header {
@@ -94,8 +95,10 @@ header {
 }
 
 .hero {
+    position: relative;
     width: 100%;
     height: 90vh;
+    background-image: url(./resources/1920\ x\ 1080\ background\ Img.svg);
 }
 
 .heroContainer {
@@ -108,6 +111,10 @@ header {
     justify-content: center;
     position: relative;
     text-align: center;
+}
+
+.allCont {
+    margin-top: -50px;
 }
 
 .unlockYour {
@@ -125,21 +132,71 @@ header {
 .brands, .potential {
     position: relative;
     flex: 1;
+    text-align: left;
 }
 
 .brands span, .potential span {
     font-size: 80px;
     font-weight: 600;
+    z-index: 10;
+}
+
+.BrandsText, .PotentialText {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /* font-size: 80px; */
 }
 
 .brandsHL, .potentialHL {
     width: 100%;
-    height: 35px;
+    height: 30px;
     background-color: #FE6600;
     position: absolute;
     bottom: 10px;
+    transition-duration: .3s;
 }
 
+.hlHeight {
+    height: 15px;
+    transition-duration: .3s;
+}
+
+.heroContainer p {
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 19px;
+}
+
+#learnMore1 {
+    margin-top: 63px;
+    font-size: 20px;
+    background-color: #FE6600;
+    color: white;
+    font-weight: 400;
+    border: none;
+    border-radius: 14px;
+    padding: 15px 58px;
+}
+
+
+
+.downIcon {
+    width: 30px;
+    height: 54;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    margin-bottom: 1px;
+    transition-duration: .3s;
+    transform: translateX(-50%);
+}
+
+.downIcon:hover {
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition-duration: .3s;
+}
 
 
 
