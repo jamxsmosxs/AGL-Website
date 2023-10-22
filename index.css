@@ -44,7 +44,7 @@ header {
     flex: 2;
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: space-between;
     gap: 50px;
 }
 
@@ -73,11 +73,20 @@ header {
 .active {
     color: #FE6600 !important;
     font-weight: 700;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #FE6600 !important;
 }
 
 .menus ul a:hover {
     color: #FE6600;
     transition-duration: .3s;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #FE6600;
+}
+
+.contactBtn {
+    display: flex;
+    justify-content: left;
 }
 
 #contactBtn {
@@ -88,6 +97,11 @@ header {
     font-weight: 500;
     color: white;
     border-radius: 10px;
+}
+
+#contactBtn:hover {
+    cursor: pointer;
+    padding: 10px 40px;
 }
 
 .hidden {
@@ -184,7 +198,7 @@ header {
 .downIcon {
     width: 30px;
     height: 54;
-    position: absolute;
+    position: absolute; 
     bottom: 50px;
     left: 50%;
     margin-bottom: 1px;
