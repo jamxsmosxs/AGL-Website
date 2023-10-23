@@ -1,9 +1,9 @@
-<svg width="1920" height="959" viewBox="0 0 1920 959" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="mask0_30_2612" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1920" height="959">
-<rect width="1920" height="959" transform="matrix(1 0 0 -1 0 959)" fill="#D9D9D9" fill-opacity="0.47"/>
+<svg width="1920" height="960" viewBox="0 0 1920 960" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_3_1003" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1920" height="960">
+<rect width="1920" height="960" transform="matrix(1 0 0 -1 0 960)" fill="#D9D9D9" fill-opacity="0.47"/>
 </mask>
-<g mask="url(#mask0_30_2612)">
-<rect width="151.361" height="423.372" rx="75.6805" transform="matrix(0.707475 0.706738 -0.707475 0.706738 103.093 100.895)" fill="#FE6600"/>
-<rect width="151.361" height="423.372" rx="75.6805" transform="matrix(0.707107 -0.707107 0.706369 0.707843 1695 659.028)" fill="#FE6600"/>
+<g mask="url(#mask0_3_1003)">
+<rect x="103.093" y="101" width="195.473" height="423.592" rx="97.7363" transform="rotate(45 103.093 101)" fill="#FE6600"/>
+<path d="M2046.07 752.415C2084.24 790.583 2084.24 852.467 2046.07 890.635C2007.9 928.803 1946.02 928.803 1907.85 890.635L1746.54 729.33C1708.37 691.162 1708.37 629.278 1746.54 591.11C1784.71 552.942 1846.59 552.942 1884.76 591.11L2046.07 752.415Z" fill="#FE6600"/>
 </g>
 </svg>

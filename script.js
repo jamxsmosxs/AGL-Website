@@ -14,6 +14,7 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('rotate');
     navMenu.classList.toggle('showNav');
     activeNavBackground.classList.toggle('hidden');
+    navMenu.classList.toggle('fixed');
 })
 
 brandsText.addEventListener("mouseover", () => {
@@ -31,13 +32,3 @@ potentialText.addEventListener("mouseover", () => {
 potentialText.addEventListener("mouseout", () => {
     potentialHighlight.classList.remove("hlHeight");
 })
-
-scrollToAbtSec.addEventListener("click", () => {
-    abtUsSection.scrollIntoView();
-})
-
-const y = element.getBoundingClientRect().top + window.scrollY;
-window.scroll({
-  top: y,
-  behavior: 'smooth'
-});
