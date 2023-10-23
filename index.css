@@ -254,15 +254,18 @@ header {
 .aboutUs {
     width: 100%;
     height: 100vh;
+    background-color: #fff4ec;
+    display: flex;
+    align-items: center;
 }
 
 .aboutUsContainer {
     width: 80%;
     margin: auto;
-    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #fff4ec;
 }
 
 .abtUsImgContainer {
@@ -505,9 +508,8 @@ header {
     .aboutUsContainer {
         display: block;
         width: 80%;
-        height: 100vh;
         text-align: center;
-        padding-top: 100px;
+        /* padding-top: 100px; */
     }
 
     .abtUsImg {
@@ -548,11 +550,11 @@ header {
 
     .mobileTitle h1 {
         margin-bottom: 10px;
-        font-size: 28px;
+        font-size: 26px;
     }
 
     .lineIcon {
-        width: 150px;
+        width: 140px;
         margin-bottom: 30px;
     }
 
