@@ -5,7 +5,7 @@
 }
 
 .btnMedium {
-    margin-top: 63px;
+    margin-top: 40px;
     font-size: 20px;
     background-color: #FE6600;
     color: white;
@@ -19,7 +19,10 @@
 .btnMedium:hover {
     cursor: pointer;
     transition-duration: .3s;
-    padding: 14px 70px;
+    padding: 14px 80px;
+    color: #FE6600;
+    border: 1px solid #FE6600;
+    background: none;
 }
 
 html {
@@ -136,9 +139,9 @@ header {
     position: relative;
     width: 100%;
     height: 90vh;
-    background-image: url(./resources/1920\ x\ 1080\ background\ Img.svg);
+    /* background-image: url(./resources/1920\ x\ 1080\ background\ Img.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
 }
 
 .navMenuActive {
@@ -257,6 +260,23 @@ header {
     background-color: #fff4ec;
     display: flex;
     align-items: center;
+    position: relative;
+}
+
+.lineTriangle1 {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+.lineTriangle2 {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
 }
 
 .aboutUsContainer {
@@ -296,7 +316,7 @@ header {
 }
 
 .abtUsTextsContainer p {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 27px;
 }
@@ -357,10 +377,9 @@ header {
 
 
 @media (max-width: 700px) {
-    .hero {
-        background-image: url(./resources/600\ width\ background\ Img.svg);
-        background-repeat: no-repeat;
-        background-size: cover;
+    .forHero {
+        width: 60px !important;
+        height: 60px !important;
     }
 
     .headerContainer {
@@ -505,6 +524,20 @@ header {
     }
 
     /* About Us Section */
+    .lineTriangle1 {
+        width: 60px;
+        height: 60px;
+        top: 15px;
+        right: 15px;
+    }
+
+    .lineTriangle2 {
+        width: 40px;
+        height: 40px;
+        bottom: 15px;
+        left: 15px;
+    }
+
     .aboutUsContainer {
         display: block;
         width: 80%;
