@@ -7,6 +7,8 @@ const potentialText = document.querySelector(".PotentialText");
 const brandsHighlight = document.querySelector(".brandsHL");
 const potentialHighlight = document.querySelector(".potentialHL");
 const activeNavBackground = document.querySelector(".navMenuActive");
+const scrollToAbtSec = document.querySelector(".downIcon");
+const abtUsSection = document.querySelector(".aboutUs");
 
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('rotate');
@@ -29,3 +31,13 @@ potentialText.addEventListener("mouseover", () => {
 potentialText.addEventListener("mouseout", () => {
     potentialHighlight.classList.remove("hlHeight");
 })
+
+scrollToAbtSec.addEventListener("click", () => {
+    abtUsSection.scrollIntoView();
+})
+
+const y = element.getBoundingClientRect().top + window.scrollY;
+window.scroll({
+  top: y,
+  behavior: 'smooth'
+});

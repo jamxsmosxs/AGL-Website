@@ -6,20 +6,20 @@
 
 body {
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     user-select: none;
 }
 
 header {
     width: 100%;
-    height: 100px;
+    height: 10vh;
 }
 
 .headerContainer {
     width: 1500px;
     margin: auto;
     background-color: white;
-    height: 10vh;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -115,6 +115,8 @@ header {
     width: 100%;
     height: 90vh;
     background-image: url(./resources/1920\ x\ 1080\ background\ Img.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .navMenuActive {
@@ -137,10 +139,6 @@ header {
     justify-content: center;
     position: relative;
     text-align: center;
-}
-
-.brandsHL, .potentialHL {
-    width: 100%;
 }
 
 .allCont {
@@ -250,9 +248,107 @@ header {
     transition-duration: .3s;
 }
 
+/* About Us Section */
 
+.aboutUs {
+    width: 100%;
+    height: 100vh;
+}
 
+.aboutUsContainer {
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.abtUsImgContainer {
+    flex: 1;
+    padding-right: 74px;
+}
+
+.abtUsImg {
+    width: 650px;
+    animation: slideRight .5s ease-out;
+}
+
+.abtUsTextsContainer {
+    flex: 1;
+    padding-left: 74px;
+    animation: slideDown .5s ease-out;
+}
+
+.abtUsTextsContainer h1 {
+    font-size: 32px;
+    color: #131313;
+    margin-bottom: 5px;
+}
+
+.lineIcon {
+    width: 192px;
+    margin-bottom: 20px;
+}
+
+.abtUsTextsContainer p {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 27px;
+}
+
+@keyframes slideRight {
+    0% {
+        opacity: 0%;
+        margin-top: 600px;
+    }
+
+    50% {
+        opacity: 30%;
+    }
+
+    100% {
+        opacity: 100%;
+        margin-top: 0px;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0%;
+        margin-bottom: 600px;
+    }
+
+    50% {
+        opacity: 30%;
+    }
+
+    100% {
+        opacity: 100%;
+        margin-bottom: 0px;
+    }
+}
+
+#learnMore1 {
+    margin-top: 40px;
+    font-size: 20px;
+    background-color: #FE6600;
+    color: white;
+    font-weight: 400;
+    border: none;
+    border-radius: 14px;
+    transition-duration: .3s;
+    padding: 15px 58px;
+}
+
+#learnMore2:hover {
+    cursor: pointer;
+    transition-duration: .3s;
+    padding: 14px 70px;
+    border: 1px solid #FE6600;
+    background-color: white;
+    color: #FE6600;
+}
 
 
 
@@ -357,8 +453,12 @@ header {
         padding: 8px 28px
     }
 
+    .allCont {
+        margin-top: 0px;
+    }
+
     .unlockYour {
-        font-size: 55px;
+        font-size: 50px;
         font-weight: 700;
     }
 
@@ -377,18 +477,23 @@ header {
     }
 
     .brands span, .potential span {
-        font-size: 55px;
+        font-size: 50px;
         font-weight: 700;
     }
 
     .PotentialText, .BrandsText {
-        font-size: 55px;
+        font-size: 50px;
         font-weight: 700;
     }
 
+    .brandsHL, .potentialHL {
+        height: 18px;
+    }
+
     .allCont p {
-        font-size: 22px;
+        font-size: 20px;
         margin-top: 10px;
+        font-weight: 500;
     }
 
     #learnMore1 {
@@ -401,5 +506,19 @@ header {
         border: none;
         background-color: #FE6600;
         color: white;
+    }
+
+    .downIcon {
+        width: 25px;
+    }
+
+    /* About Us Section */
+    .aboutUsContainer {
+        display: block;
+        height: 100vh;
+    }
+
+    .abtUsImg {
+        width: 330px;
     }
 }
