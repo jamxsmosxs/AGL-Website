@@ -1,6 +1,6 @@
 `use strict`
 
-const hamburger = document.querySelector(".hamburger");
+const hamburger = document.querySelector(".burgerContainer");
 const navMenu = document.querySelector(".navMenu");
 const brandsText = document.querySelector(".BrandsText");
 const potentialText = document.querySelector(".PotentialText");
@@ -10,8 +10,10 @@ const activeNavBackground = document.querySelector(".navMenuActive");
 const scrollToAbtSec = document.querySelector(".downIcon");
 const abtUsSection = document.querySelector(".aboutUs");
 
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('rotate');
+document.querySelector(".burgerContainer").addEventListener("click", () => {
+    document.querySelector(".up").classList.toggle("uprotate");
+    document.querySelector(".middle").classList.toggle("middleHidden");
+    document.querySelector(".bottom").classList.toggle("bottomRotate");
     navMenu.classList.toggle('showNav');
     activeNavBackground.classList.toggle('hidden');
     navMenu.classList.toggle('fixed');

@@ -4,6 +4,66 @@
     font-family: 'Inter', sans-serif;
 }
 
+.burgerContainer {
+    width: 50px;
+    height: 25px;
+    padding: 12.5px 0px;
+    background-color: #ff7b00;
+    display: flex;
+    flex-direction: column;
+    transition-duration: .3s;
+    border-radius: 10px;
+    position: relative;
+    display: none;
+}
+
+.burgerContainer:hover {
+    cursor: pointer;
+    background-color: #ff7b00;
+    transition-duration: .3s;
+}
+
+.up, .middle, .bottom {
+    width: 50%;
+    background-color: white;
+    height: 3px;
+    margin: auto;
+    transition-duration: .3s;
+    border-radius: 10px;
+    display: block;
+}
+
+.uprotate {
+    position: absolute;
+    rotate: 45deg;
+    width: 50%;
+    background-color: white;
+    border-radius: 10px;
+    height: 5px;
+    left: 25%;
+    transition-duration: .3s;
+    top: 45%;
+}
+
+.middleHidden {
+    transition-duration: .3s;
+    display: none;
+}
+
+.bottomRotate {
+    position: absolute;
+    rotate: -45deg;
+    width: 50%;
+    background-color: white;
+    border-radius: 10px;
+    height: 5px;
+    right: 25%;
+    transition-duration: .3s;
+    top: 45%;
+}
+
+
+
 .btnMedium {
     margin-top: 40px;
     font-size: 20px;
@@ -386,6 +446,10 @@ header {
         display: block;
         width: 95%;
         height: 8vh;
+    }
+
+    .burgerContainer {
+        display: flex;
     }
 
     .logo {
