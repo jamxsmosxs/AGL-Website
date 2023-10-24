@@ -62,7 +62,25 @@
     top: 45%;
 }
 
+.btnSmall {
+    font-size: 14px;
+    background-color: #FE6600;
+    color: white;
+    font-weight: 300;
+    border: none;
+    border-radius: 10px;
+    transition-duration: .3s;
+    padding: 10px 35px;
+}
 
+.btnSmall:hover {
+    cursor: pointer;
+    transition-duration: .3s;
+    padding: 10px 50px;
+    color: #FE6600;
+    border: 1px solid #FE6600;
+    background: none;
+}
 
 .btnMedium {
     margin-top: 40px;
@@ -84,6 +102,7 @@
     border: 1px solid #FE6600;
     background: none;
 }
+
 
 html {
     scroll-behavior: smooth;
@@ -265,7 +284,7 @@ header {
 .brandsHL, .potentialHL {
     width: 100%;
     height: 30px;
-    background-color: #FE6600;
+    background-color: #ff8a3c;
     position: absolute;
     bottom: 10px;
     transition-duration: .3s;
@@ -372,7 +391,7 @@ header {
 
 .lineIcon {
     width: 192px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .abtUsTextsContainer p {
@@ -417,11 +436,82 @@ header {
     display: none;
 }
 
+/* Our Services Section */
+.services {
+    width: 100%;
+}
 
+.servicesContainer {
+    width: 80%;
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    text-align: center;
+}
 
+.servicesTitle {
+    font-size: 32px;
+    margin-bottom: 5px;
+    color: #131313;
+}
 
+.titleDesc {
+    color: #131313;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
 
+.ServicesElContainer {
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+}
 
+.itemCont {
+    width: 89.5%;
+    height: 446px;
+    background-color: #f6f6f6;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 25px;
+}
+
+.itemCont img {
+    width: 100px;
+    height: 100px;
+    transition-duration: .3s;
+    margin-bottom: 8px;
+}
+
+.itemCont img:hover {
+    rotate: 405deg;
+    transition-duration: .3s;
+}
+
+.itemCont h1 {
+    font-size: 22px;
+}
+
+.itemLine {
+    width: 180px;
+    margin-top: 10px;
+    height: 3px;
+    margin-bottom: 10px;
+}
+
+.itemCont p {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0px 20px;
+}
+
+.servicesBtn {
+    margin-top: 13px;
+}
 
 
 
@@ -453,7 +543,8 @@ header {
     }
 
     .logo {
-        width: 100%;
+        width: 90%;
+        margin: auto;
         height: 100%;
     }
 
@@ -571,8 +662,20 @@ header {
         padding: 10px  40px;
     }
 
+    .btnSmall {
+        font-size: 14px;
+        padding: 6px  30px;
+    }
+
     .btnMedium:hover {
         padding: 10px 40px;
+        border: none;
+        background-color: #FE6600;
+        color: white;
+    }
+
+    .btnSmall:hover {
+        padding: 6px 30px;
         border: none;
         background-color: #FE6600;
         color: white;
@@ -653,6 +756,45 @@ header {
     .lineIcon {
         width: 140px;
         margin-bottom: 30px;
+    }
+
+
+    /* Our Services Section */
+    .servicesTitle {
+        font-size: 26px;
+    }
+    
+
+    .ServicesElContainer {
+        width: 95%;
+        display: block;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 12px;
+    }
+
+    .itemCont {
+        margin-bottom: 13px;
+        height: 400px;
+    }
+
+    .itemCont img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .titleDesc {
+        font-size: 18px;
+    }
+
+    .itemCont h1 {
+        font-size: 20px;
+    }
+
+    .itemCont p {
+        font-size: 14px;
+        line-height: 19px;
+        padding: 0px 0px;
     }
 
 }
