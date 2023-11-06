@@ -439,13 +439,13 @@ header {
 /* Our Services Section */
 .services {
     width: 100%;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .servicesContainer {
     width: 80%;
     margin: auto;
-    margin-top: 200px;
-    margin-bottom: 200px;
     text-align: center;
 }
 
