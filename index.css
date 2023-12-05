@@ -4,6 +4,16 @@
     font-family: 'Inter', sans-serif;
 }
 
+.xmasGreeting {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 30;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.788);
+}
+
 .burgerContainer {
     width: 50px;
     height: 25px;
@@ -604,6 +614,23 @@ header {
     height: 90%;
     background-color: white;
     overflow-y: scroll;
+}
+
+.MPSec1 {
+    padding: 120px 125px 0px 125px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 140px;
+}
+
+.MPSec1 p {
+    text-align: justify;
+}
+
+.MPSec1 svg {
+    margin-top: 5px;
+    margin-bottom: 12px;
 }
 
 
