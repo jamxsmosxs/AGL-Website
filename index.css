@@ -191,7 +191,7 @@ header {
 }
 
 .headerContainer {
-    width: 1500px;
+    width: 90%;
     margin: auto;
     background-color: white;
     height: 100%;
@@ -708,10 +708,67 @@ header {
 
 
 @media (max-width: 1366px) {
+
+    .card {
+        width: 70%;
+    }
+
+    .closeGreetingBtn {
+        width: 28px;
+        height: 28px;
+        right: 11%;
+    }    
+    
+    .siteLogo {
+        width: 90px;
+    }
+
+    .menus ul li {
+        font-size: 14px;
+    }
+
+    #contactBtn {
+        font-size: 12px;
+        padding: 8px 32px;
+    }
+
+    #contactBtn:hover {
+        padding: 8px 45px;
+    }
+
+    .unlockYour {
+        font-size: 75px
+    }
+
+    .brands span, .potential span {
+        font-size:  75px;
+    }
+    
+    .heroContainer p {
+        font-size: 24px;
+    }
+
+    .btnMedium {
+        margin-top: 38px;
+        font-size: 18px;
+        padding: 13px 54px;
+    }
+
+    .downIcon {
+        width: 26px;
+    }
+
+
+
+
+
+
+
     .itemCont {
         width: 85%;
     }
 }
+
 
 
 
