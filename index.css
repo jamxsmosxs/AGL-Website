@@ -22,7 +22,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: xmasAppear .3s ease-in;
 }
 
 @keyframes xmasAppear {
@@ -55,6 +54,7 @@
     background-image: url(./resources/Greetings.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    animation: xmasAppear 1s ease-in;
 }
 
 .closeGreetingBtn {
