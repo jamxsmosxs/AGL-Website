@@ -1,5 +1,21 @@
 `use strict`
 
+const showGreeting = document.querySelector(".xmasGreeting");
+
+function unhideCard() {
+    showGreeting.classList.remove("hide");
+};
+
+window.onload = unhideCard();
+
+const closeGreetingBtn = document.querySelector('.closeGreetingBtn');
+
+closeGreetingBtn.addEventListener("click", () => {
+    showGreeting.classList.add("hide");
+})
+
+
+
 const hamburger = document.querySelector(".burgerContainer");
 const navMenu = document.querySelector(".navMenu");
 const brandsText = document.querySelector(".BrandsText");
@@ -12,6 +28,7 @@ const abtUsSection = document.querySelector(".aboutUs");
 const mediaPlacementBtn = document.getElementById("mediaPlcment");
 const moreMediaPlacement = document.querySelector(".mediaPlacement");
 const closeMediaPlacement = document.getElementById("closeMediaPlacement");
+
 
 document.querySelector(".burgerContainer").addEventListener("click", () => {
     document.querySelector(".up").classList.toggle("uprotate");
@@ -46,8 +63,8 @@ closeMediaPlacement.addEventListener("click", () => {
     moreMediaPlacement.classList.add("mediaPlacement");
 })
 
-const line1 = document.querySelector("#line1");
+// const line1 = document.querySelector("#line1");
 
-line1.addEventListener('mouseover', () => {
-    line1.classList.add("rotate")
-})
+// line1.addEventListener('mouseover', () => {
+//     line1.classList.add("rotate");
+// })
