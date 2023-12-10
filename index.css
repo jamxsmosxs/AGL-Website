@@ -34,9 +34,6 @@
         margin-top: 50px;
     }
 
-    80% {
-        margin-top: -50px;
-    }
 
     100% {
         opacity: 100px;
@@ -54,14 +51,14 @@
     background-image: url(./resources/Greetings.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    animation: xmasAppear 1s ease-in;
+    animation: xmasAppear .5s ease;
 }
 
 .closeGreetingBtn {
     position: absolute;
     /* background-color: white; */
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     top: 10%;
     right: 16%;
     display: flex;
@@ -783,6 +780,19 @@ header {
 
 
 @media (max-width: 700px) {
+    .closeGreetingBtn {
+        width: 20px;
+        height: 20px;
+        right: 8%;
+        top: 15%;
+    }
+
+    .card {
+        background-image: url(./resources/Greetings\ mobile.jpg);
+        background-position: center center;
+        background-size: contain;
+    }
+
     .forHero {
         width: 60px !important;
         height: 60px !important;

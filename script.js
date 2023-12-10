@@ -62,9 +62,3 @@ mediaPlacementBtn.addEventListener("click", () => {
 closeMediaPlacement.addEventListener("click", () => {
     moreMediaPlacement.classList.add("mediaPlacement");
 })
-
-// const line1 = document.querySelector("#line1");
-
-// line1.addEventListener('mouseover', () => {
-//     line1.classList.add("rotate");
-// })
