@@ -964,21 +964,27 @@ header {
 
     .bpContainer {
         display: block;
+        text-align: center;
     }
 
     .brands {
-        width: 60%;
+        display: block;
+        width: 50%;
         margin: auto;
+        text-align: center;
     }
 
     .potential {
-        width: 71%;
+        width: 60%;
         margin: auto;
+        text-align: center;
     }
 
     .brands span, .potential span {
         font-size: 50px;
         font-weight: 700;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .PotentialText, .BrandsText {
