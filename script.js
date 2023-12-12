@@ -27,7 +27,6 @@ const potentialText = document.querySelector(".PotentialText");
 const brandsHighlight = document.querySelector(".brandsHL");
 const potentialHighlight = document.querySelector(".potentialHL");
 const activeNavBackground = document.querySelector(".navMenuActive");
-const showNav = document.querySelector('teamShowNav');
 const scrollToAbtSec = document.querySelector(".downIcon");
 const abtUsSection = document.querySelector(".aboutUs");
 const mediaPlacementBtn = document.getElementById("mediaPlcment");
@@ -42,7 +41,6 @@ document.querySelector(".burgerContainer").addEventListener("click", () => {
     navMenu.classList.toggle('showNav');
     activeNavBackground.classList.toggle('hidden');
     navMenu.classList.toggle('fixed');
-    showNav.classList.toggle('hidden');
 })
 
 brandsText.addEventListener("mouseover", () => {

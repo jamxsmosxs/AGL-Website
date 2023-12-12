@@ -965,6 +965,8 @@ header {
     .bpContainer {
         display: block;
         text-align: center;
+        width: 85%;
+        margin: auto;
     }
 
     .brands {
@@ -1142,4 +1144,34 @@ header {
         padding: 0px 0px;
     }
 
+}
+
+
+
+
+
+@media (max-width: 550px) {
+    .bpContainer {
+        display: block;
+    }
+
+    .brands {
+        width: 65%;
+        margin: auto;
+    }
+
+    .potential {
+        width: 75%;
+        margin: auto;
+    }
+
+    .brands span, .potential span {
+        font-size: 50px;
+        font-weight: 700;
+    }
+
+    .PotentialText, .BrandsText {
+        font-size: 50px;
+        font-weight: 700;
+    }
 }
