@@ -1,6 +1,7 @@
 `use strict`
 
 const showGreeting = document.querySelector(".xmasGreeting");
+const xmasContainer = document.querySelector(".xmasCont");
 
 function unhideCard() {
     showGreeting.classList.remove("hide");
@@ -14,6 +15,9 @@ closeGreetingBtn.addEventListener("click", () => {
     showGreeting.classList.add("hide");
 })
 
+xmasContainer.addEventListener("click", () => {
+    showGreeting.classList.add("hide");
+})
 
 
 const hamburger = document.querySelector(".burgerContainer");
@@ -23,6 +27,7 @@ const potentialText = document.querySelector(".PotentialText");
 const brandsHighlight = document.querySelector(".brandsHL");
 const potentialHighlight = document.querySelector(".potentialHL");
 const activeNavBackground = document.querySelector(".navMenuActive");
+const showNav = document.querySelector('teamShowNav');
 const scrollToAbtSec = document.querySelector(".downIcon");
 const abtUsSection = document.querySelector(".aboutUs");
 const mediaPlacementBtn = document.getElementById("mediaPlcment");
@@ -37,6 +42,7 @@ document.querySelector(".burgerContainer").addEventListener("click", () => {
     navMenu.classList.toggle('showNav');
     activeNavBackground.classList.toggle('hidden');
     navMenu.classList.toggle('fixed');
+    showNav.classList.toggle('hidden');
 })
 
 brandsText.addEventListener("mouseover", () => {

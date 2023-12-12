@@ -4,6 +4,19 @@
     font-family: 'Inter', sans-serif;
 }
 
+/* .hiddenElement {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 100%;
+    filter: blur(0);
+    transform: translateX(0);
+} */
+
 .xmasGreeting {
     position: fixed;
     width: 100%;
@@ -502,6 +515,66 @@ header {
 
 .mobileTitle {
     display: none;
+}
+
+.coreValues {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.secTitle {
+    width: 100%;
+    height: 50vh;
+    background-image: url(./resources/Core\ Values\ Images.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secTitle h1 {
+    color: white;
+    font-weight: 500;
+    font-size: 50px;
+    letter-spacing: 40px;
+}
+
+.cvContentCon {
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-auto-flow: column;
+    margin-top: 150px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.cvIcon {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    background: none;
+    border: 3px solid #0C0E23;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cvIcon img {
+    width: 65px;
+}
+
+.content h1 {
+    font-weight: 000;
+    font-size: 20px;
 }
 
 /* Our Services Section */
