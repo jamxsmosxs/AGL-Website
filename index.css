@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
+    text-decoration: none;
 }
 
 /* .hiddenElement {
@@ -412,6 +413,20 @@ header {
     transition-duration: .3s;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* About Us Section */
 
 .aboutUs {
@@ -517,7 +532,14 @@ header {
     display: none;
 }
 
-.coreValues {
+
+
+
+
+
+
+
+/* .coreValues {
     width: 100%;
     height: 100vh;
     position: relative;
@@ -575,7 +597,14 @@ header {
 .content h1 {
     font-weight: 000;
     font-size: 20px;
-}
+} */
+
+
+
+
+
+
+
 
 /* Our Services Section */
 .services {
@@ -776,6 +805,64 @@ header {
 
 
 
+/* Our Brands Styling */
+.ourBrands {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(80, 80, 80);
+    align-items: center;
+    padding: 200px 0px;
+}
+
+.brandsContainer {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.brandsContainer h1 {
+    color: white;
+    margin-bottom: 8px;
+}
+
+.brandsContainer p {
+    color: white;
+}
+
+.brandsLogosCont {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    padding-top: 40px;
+    margin-bottom: 20px;
+}
+
+.brandsLogo {
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brandsLogo img {
+    transition-duration: .3s;
+    height: 70%;
+}
+
+.brandsLogo img:hover {
+    height: 85%;
+    transition-duration: .3s;
+}
+
+#moreBrands:hover {
+    background-color: white;
+    border: none;
+}
 
 
 
@@ -792,14 +879,7 @@ header {
 
 
 
-
-
-
-
-
-
-
-
+/* Footer styling */
 footer {
     width: 100%;
     height: 200px;
@@ -815,15 +895,12 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 200px;
-}
-
-.leftFooterCont, .rightFooterCont {
-    flex: 1;
+    gap: 40%;
 }
 
 .leftFooterCont {
     line-height: 1.6;
+    flex: 2;
 }
 
 .leftFooterCont h1 {
@@ -841,6 +918,31 @@ footer {
     width: 36px;
     height: 36px;
     margin-top: 15px;
+}
+
+.rightFooterCont {
+    flex: 1.5;
+    line-height: 30px;
+}
+
+.quickLinksCon {
+    display: flex;
+    flex-direction: column;
+}
+
+.quickLinksTitle span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.quickLinksCon a {
+    color: white;
+    font-size: 15px;
+    border-top: 1px solid white;
+}
+
+.quickLinksCon a:hover {
+    color: #ff8c3f;
 }
 
 .copyrightCont {
@@ -1228,6 +1330,77 @@ footer {
         line-height: 19px;
         padding: 0px 0px;
     }
+
+
+
+
+
+
+
+
+
+    /* Our Brands */
+    .brandsContainer {
+        width: 80%;
+    }
+
+    .brandsLogosCont {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .brandsLogo {
+        width: 90%;
+        height: 150px;
+    }
+
+    .hideOnMobile {
+        display: none;
+    }
+
+
+
+
+
+    /* footer mobile styling */
+    footer {
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footerCont {
+        width: 80%;
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    .leftFooterCont {
+        flex: 1;
+    }
+
+    .leftFooterCont h1 {
+        font-size: 30px;
+    }
+
+    .leftFooterCont img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .rightFooterCont {
+        width: 100%;
+        text-align: left;
+    }
+
+    .rightFooterCont span {
+        font-size: 18px;
+    }
+
+    .rightFooterCont a {
+        font-size: 14px;
+    }
+
+
 
 }
 

@@ -7,7 +7,7 @@ function unhideCard() {
     showGreeting.classList.remove("hide");
 };
 
-window.onload = unhideCard();
+// window.onload = unhideCard();
 
 const closeGreetingBtn = document.querySelector('.closeGreetingBtn');
 
