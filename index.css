@@ -331,12 +331,10 @@ header {
 .allCont {
     width: 100%;
     margin-top: -50px;
+    animation: abtUsSlide .8s ease;
 }
 
-.unlockYour {
-    font-size: 80px;
-    font-weight: 600;
-}
+
 
 .bpContainer {
     display: flex;
@@ -368,7 +366,7 @@ header {
 }
 
 .highlight {
-    background-color:#FE6600;
+    background-color:#ff8737;
     width: 100%;
     position: absolute;
     bottom: 0px;
@@ -468,15 +466,15 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #fff4ec;
+    gap: 30px;
 }
 
 .abtUsImgContainer {
     flex: 1;
-    padding-right: 74px;
 }
 
 .abtUsImg {
-    width: 650px;
+    width: 100%;
     animation: slideRight .5s ease-out;
 }
 
@@ -907,6 +905,10 @@ header {
     margin: auto;
 }
 
+.brandsLogo {
+    animation: abtUsSlide .8s ease;
+}
+
 .allBrandsCont .brandsTitle {
     margin-top: 100px;
 }
@@ -925,6 +927,19 @@ header {
 
 .closeXIcon:hover {
     cursor: pointer;
+}
+
+@keyframes abtUsSlide {
+    0% {
+        margin-top: 150px;
+        opacity: 0%;
+    }
+
+    100% {
+        margin-top: 0px;
+        opacity: 100%;
+    }
+
 }
 
 
@@ -1013,6 +1028,12 @@ footer {
     bottom: 0;
     left: 0;
 }
+
+
+
+
+
+
 
 
 
