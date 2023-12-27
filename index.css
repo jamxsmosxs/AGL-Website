@@ -1027,6 +1027,15 @@ footer {
     position: absolute;
     bottom: 0;
     left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyrightCont p {
+    color: white;
+    font-size: 12px;
+    font-weight: 200;
 }
 
 
