@@ -23,9 +23,9 @@ xmasContainer.addEventListener("click", () => {
 const hamburger = document.querySelector(".burgerContainer");
 const navMenu = document.querySelector(".navMenu");
 const brandsText = document.querySelector(".brandsText");
-const potentialText = document.querySelector(".potentialsText");
-const brandsHighlight = document.querySelector(".brands");
-const potentialHighlight = document.querySelector(".potential");
+const potentialText = document.querySelector(".potentialText");
+const brandsHighlight = document.querySelector(".br");
+const potentialHighlight = document.querySelector(".pt");
 const activeNavBackground = document.querySelector(".navMenuActive");
 const scrollToAbtSec = document.querySelector(".downIcon");
 const abtUsSection = document.querySelector(".aboutUs");
@@ -43,20 +43,21 @@ document.querySelector(".burgerContainer").addEventListener("click", () => {
     navMenu.classList.toggle('fixed');
 })
 
+// Brand's Potential Text on Home page highlight hover
 brandsText.addEventListener("mouseover", () => {
-    brandsHighlight.classList.add("hlHeight");
+    brandsHighlight.style.height = "10px";
 })
 
 brandsText.addEventListener("mouseout", () => {
-    brandsHighlight.classList.remove("hlHeight");
+    brandsHighlight.style.height = "40px";
 })
 
 potentialText.addEventListener("mouseover", () => {
-    potentialHighlight.classList.add("hlHeight");
+    potentialHighlight.style.height = "10px";
 })
 
 potentialText.addEventListener("mouseout", () => {
-    potentialHighlight.classList.remove("hlHeight");
+    potentialHighlight.style.height = "40px";
 })
 
 mediaPlacementBtn.addEventListener("click", () => {
