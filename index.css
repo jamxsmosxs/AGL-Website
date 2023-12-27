@@ -641,7 +641,6 @@ header {
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
     gap: 12px;
 }
 
@@ -1050,10 +1049,6 @@ footer {
 
 
 
-
-
-
-
 @media (max-width: 1366px) {
 
     .card {
@@ -1105,12 +1100,6 @@ footer {
         width: 26px;
     }
 
-
-
-
-
-
-
     .itemCont {
         width: 85%;
     }
@@ -1129,25 +1118,39 @@ footer {
 
 
 
-@media (max-width: 700px) {
-    .closeGreetingBtn {
-        width: 20px;
-        height: 20px;
-        right: 8%;
-        top: 15%;
+@media (max-width: 1200px) {
+    .allCont h1 {
+        font-size: 70px;
+        font-weight: 600;
     }
 
-    .card {
-        background-image: url(./resources/Greetings\ mobile.jpg);
-        background-position: center center;
-        background-size: contain;
+    .navMenu {
+        flex: 3;
     }
 
-    .forHero {
-        width: 60px !important;
-        height: 60px !important;
+    .abtUsTextsContainer h1 {
+        font-size: 25px;
     }
 
+    .abtUsTextsContainer p {
+        font-size: 16px;
+    }
+
+    .lineIcon {
+        width: 150px;
+    }
+
+    .btnMedium {
+        font-size: 14px;
+        padding: 12px 50px;
+    }
+}
+
+
+
+
+
+@media (max-width: 1000px) {
     .headerContainer {
         display: block;
         width: 95%;
@@ -1229,6 +1232,53 @@ footer {
     #contactBtn:hover {
         padding: 8px 28px
     }
+
+    .ServicesElContainer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+    .closeGreetingBtn {
+        width: 20px;
+        height: 20px;
+        right: 8%;
+        top: 15%;
+    }
+
+    .card {
+        background-image: url(./resources/Greetings\ mobile.jpg);
+        background-position: center center;
+        background-size: contain;
+    }
+
+    .forHero {
+        width: 60px !important;
+        height: 60px !important;
+    }
+
+    
 
     .allCont {
         width: 90%;
