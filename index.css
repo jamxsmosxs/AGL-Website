@@ -5,6 +5,7 @@
     text-decoration: none;
 }
 
+
 /* .hiddenElement {
     opacity: 0;
     filter: blur(5px);
@@ -26,7 +27,7 @@
     top: 0;
     left: 0;
     display: block;
-}
+}   
 
 .xmasCont {
     width: 100%;
@@ -328,32 +329,38 @@ header {
 }
 
 .allCont {
+    width: 100%;
     margin-top: -50px;
 }
 
 .unlockYour {
     font-size: 80px;
     font-weight: 600;
-    /* animation: slideDown 1s ease-in; */
 }
 
 .bpContainer {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 30px;
+    justify-content: space-around;
+    gap: 40px;
+    width: 50%;
+    margin: auto;
 }
 
 .brands, .potential {
-    position: relative;
-    flex: 1;
-    text-align: left;
+    height: 80px;
+    transition-duration: .3s;
+    background: linear-gradient(to bottom, #fff 65%, #ff7b00 65%);
 }
 
-.brands span, .potential span {
+.brandsText {
     font-size: 80px;
     font-weight: 600;
-    z-index: 10;
+}
+
+.potentialsText {
+    font-size: 80px;
+    font-weight: 600;
 }
 
 .BrandsText, .PotentialText {
@@ -368,12 +375,12 @@ header {
     height: 30px;
     background-color: #ff8a3c;
     position: absolute;
-    bottom: 10px;
+    bottom: 18px;
     transition-duration: .3s;
 }
 
 .hlHeight {
-    height: 15px;
+    background: linear-gradient(to bottom, #fff 85%, #ff7b00 85%);
     transition-duration: .3s;
 }
 
@@ -847,6 +854,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.24);
 }
 
 .brandsLogo img {
@@ -865,7 +873,59 @@ header {
 }
 
 
+/* All Brands Styling */
+.hiddenn {
+    display: none !important;
+}
 
+.allBrands {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100vh;
+   background-color: #000000e5;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 50;
+}
+
+.allBrands h1, .allBrands p {
+    color: black;
+}
+
+.allBrandsCont {
+    width: 80%;
+    height: 90%;
+    background-color: rgb(241, 241, 241);
+    overflow-y: scroll;
+}
+
+.allBrands .brandsLogosCont {
+    width: 60%;
+    margin: auto;
+}
+
+.allBrandsCont .brandsTitle {
+    margin-top: 100px;
+}
+
+.space {
+    width: 100%;
+    height: 100px;
+}
+
+.closeXIcon {
+    position: absolute;
+    top: 3.5%;
+    right: 6%;
+    width: 50px;
+}
+
+.closeXIcon:hover {
+    cursor: pointer;
+}
 
 
 
@@ -1141,6 +1201,7 @@ footer {
     }
 
     .allCont {
+        width: 80%;
         margin-top: 0px;
     }
 
@@ -1150,39 +1211,41 @@ footer {
     }
 
     .bpContainer {
-        display: block;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 85%;
         margin: auto;
+        gap: 10px;
     }
 
     .brands {
-        display: block;
-        width: 50%;
-        margin: auto;
+        margin: 0;
         text-align: center;
+        text-align: center;
+        background: linear-gradient(to bottom, #fff 55%, #ff7b00 55%);
     }
 
     .potential {
-        width: 60%;
-        margin: auto;
+        margin: 0;
         text-align: center;
+        background: linear-gradient(to bottom, #fff 50%, #ff7b00 50%);
     }
 
-    .brands span, .potential span {
-        font-size: 50px;
+    .brandsText {
+        position: static;
+        font-size: 50px !important;
         font-weight: 700;
-        left: 50%;
-        transform: translateX(-50%);
     }
 
-    .PotentialText, .BrandsText {
-        font-size: 50px;
+    .potentialsText {
+        position: static;
+        font-size: 50px !important;
         font-weight: 700;
     }
 
     .brandsHL, .potentialHL {
-        height: 18px;
+        display: none;
     }
 
     .allCont p {
@@ -1361,6 +1424,31 @@ footer {
 
 
 
+    /* All Brands */
+    .allBrandsCont {
+        width: 90%;
+    }
+
+    .brandsLogo {
+        height: 150px;
+    }
+
+    .brandsLogo img {
+        height: 60%;
+    }
+
+    .brandsLogo img:hover {
+        height: 60%;
+    }
+
+    .closeXIcon {
+        top: 5%;
+        right: 8%;
+    }
+
+
+
+
     /* footer mobile styling */
     footer {
         height: 500px;
@@ -1408,7 +1496,7 @@ footer {
 
 
 
-@media (max-width: 550px) {
+/* @media (max-width: 550px) {
     .bpContainer {
         display: block;
     }
@@ -1432,4 +1520,4 @@ footer {
         font-size: 50px;
         font-weight: 700;
     }
-}
+} */

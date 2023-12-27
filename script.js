@@ -22,10 +22,10 @@ xmasContainer.addEventListener("click", () => {
 
 const hamburger = document.querySelector(".burgerContainer");
 const navMenu = document.querySelector(".navMenu");
-const brandsText = document.querySelector(".BrandsText");
-const potentialText = document.querySelector(".PotentialText");
-const brandsHighlight = document.querySelector(".brandsHL");
-const potentialHighlight = document.querySelector(".potentialHL");
+const brandsText = document.querySelector(".brandsText");
+const potentialText = document.querySelector(".potentialsText");
+const brandsHighlight = document.querySelector(".brands");
+const potentialHighlight = document.querySelector(".potential");
 const activeNavBackground = document.querySelector(".navMenuActive");
 const scrollToAbtSec = document.querySelector(".downIcon");
 const abtUsSection = document.querySelector(".aboutUs");
@@ -65,4 +65,16 @@ mediaPlacementBtn.addEventListener("click", () => {
 
 closeMediaPlacement.addEventListener("click", () => {
     moreMediaPlacement.classList.add("mediaPlacement");
+})
+
+const viewAllBrands = document.getElementById('moreBrands');
+
+viewAllBrands.addEventListener('click', () => {
+    document.querySelector(".allBrands").classList.remove("hiddenn");
+})
+
+const closeAllBrands = document.getElementById("closeAllBrands");
+
+closeAllBrands.addEventListener('click', () => {
+    document.querySelector(".allBrands").classList.add("hiddenn");
 })
