@@ -20,18 +20,11 @@
 
 .reveal {
     opacity: 0%;
-    transform: translateY(100%);
-    margin-left: -100px;
-    transition: 1s ease;
-    filter: blur(2px);
 }
 
 .active {
     opacity: 100%;
-    transform: translateY(0);
-    transition: 1s ease;
-    filter: blur(0px);
-    margin-left: 0px;
+    animation: slideIn1 .8s ease;
 }
 
 .mobile {
@@ -65,6 +58,7 @@
     padding-top: 50px;
     padding-bottom: 250px;
     gap: 200px;
+    background-color: red;
 }
 
 .theTeamContainer {
@@ -114,11 +108,11 @@
 @keyframes slideIn1 {
     0% {
         opacity: 0%;
-        transform: translateY(50%);
+        margin-top: 150px;
     }
 
     100% {
-        transform: translateY(0%);
+        margin-top: 0px;
         opacity: 100%;
     }
 }
@@ -186,6 +180,19 @@
 .staffCnctSlide {
     top: 0% !important;
     transition-duration: .5s;   
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1366px) {
+    .theTeamContainer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 
