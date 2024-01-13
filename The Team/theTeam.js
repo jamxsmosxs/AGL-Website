@@ -30,9 +30,8 @@ document.querySelector(".burgerContainer").addEventListener("click", () => {
     document.querySelector(".middle").classList.toggle("middleHidden");
     document.querySelector(".bottom").classList.toggle("bottomRotate");
     navMenu.classList.toggle('showNav');
-    activeNavBackground.classList.toggle('hidden');
     navMenu.classList.toggle('fixed');
-    teamShowNav.classList.toggle('hidden');
+    teamShowNav.classList.toggle('hideTeamNav');
 })
 
 const staffImgs = document.querySelectorAll('.staffImg');
@@ -133,14 +132,6 @@ function showStaffContact() {
 
     staffImgs[11].addEventListener('mouseout', () => {
         staffContacts[11].classList.remove('staffCnctSlide');
-    })
-
-    staffImgs[12].addEventListener('mouseover', () => {
-        staffContacts[12].classList.add('staffCnctSlide');
-    })
-
-    staffImgs[12].addEventListener('mouseout', () => {
-        staffContacts[12].classList.remove('staffCnctSlide');
     })
 }
 
