@@ -87,64 +87,8 @@
     cursor: pointer;
 }
 
-.burgerContainer {
-    width: 50px;
-    height: 25px;
-    padding: 12.5px 0px;
-    background-color: #ff7b00;
-    display: flex;
-    flex-direction: column;
-    transition-duration: .3s;
-    border-radius: 10px;
-    position: relative;
-    display: none;
-}
 
-.burgerContainer:hover {
-    cursor: pointer;
-    background-color: #ff7b00;
-    transition-duration: .3s;
-}
-
-.up, .middle, .bottom {
-    width: 50%;
-    background-color: white;
-    height: 3px;
-    margin: auto;
-    transition-duration: .3s;
-    border-radius: 10px;
-    display: block;
-}
-
-.uprotate {
-    position: absolute;
-    rotate: 45deg;
-    width: 50%;
-    background-color: white;
-    border-radius: 10px;
-    height: 5px;
-    left: 25%;
-    transition-duration: .3s;
-    top: 45%;
-}
-
-.middleHidden {
-    transition-duration: .3s;
-    display: none;
-}
-
-.bottomRotate {
-    position: absolute;
-    rotate: -45deg;
-    width: 50%;
-    background-color: white;
-    border-radius: 10px;
-    height: 5px;
-    right: 25%;
-    transition-duration: .3s;
-    top: 45%;
-}
-
+/* Header Styling */
 .btnSmall {
     font-size: 14px;
     background-color: #FE6600;
@@ -197,102 +141,6 @@ body {
     user-select: none;
 }
 
-header {
-    width: 100%;
-    height: 10vh;
-}
-
-.headerContainer {
-    width: 90%;
-    margin: auto;
-    background-color: white;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo {
-    flex: 1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.siteLogo {
-    width: 104px;
-}
-
-.hamburger {
-    display: none;
-}
-
-.navMenu {
-    flex: 2;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
-}
-
-.menus {
-    display: flex;
-}
-
-.menus ul {
-    list-style: none;
-    display: flex;
-    gap: 56px;
-}
-
-.menus ul a {
-    text-decoration: none;
-    transition-duration: .3s;
-    color: black;
-}
-
-.menus ul li {
-    font-size: 16px;
-    font-weight: 500;
-    color: black;
-}
-
-.active {
-    color: #FE6600 !important;
-    font-weight: 700;
-    padding-bottom: 5px;
-    border-bottom: 2px solid #FE6600 !important;
-}
-
-.menus ul a:hover {
-    color: #FE6600;
-    transition-duration: .3s;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #FE6600;
-}
-
-.contactBtn {
-    display: flex;
-    justify-content: left;
-}
-
-#contactBtn {
-    padding: 10px 35px;
-    background-color: #FE6600;
-    border: none;
-    font-size: 14px;
-    font-weight: 500;
-    color: white;
-    transition-duration: .3s;
-    border-radius: 10px;
-}
-
-#contactBtn:hover {
-    cursor: pointer;
-    padding: 10px 50px;
-    transition-duration: .3s;
-}
-
 .hidden {
     display: none;
 }
@@ -333,8 +181,6 @@ header {
     margin-top: -50px;
     animation: abtUsSlide .8s ease;
 }
-
-
 
 .bpContainer {
     display: flex;
@@ -945,6 +791,67 @@ header {
 
 
 
+/* Testimonials Section */
+.testimonial {
+    width: 100%;
+    height: 70vh;
+    background-color: black;
+}
+
+.testimonial .title {
+    width: 100%;
+    text-align: center;
+    /* background-color: red; */
+    margin-bottom: 40px !important;
+}
+
+.testimonial .title p {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.testimonialCont {
+    width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+}
+
+.personsCont {
+    display: flex;
+    background-color: #616161;
+    height: 150px;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.personImg {
+    flex: 1;
+    position: relative;
+    height: 100%;
+}
+
+.personImg div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: url(./resources/img\ 1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.personDetail {
+    flex: 3;
+}
+
+
+
+
 
 
 
@@ -1059,23 +966,6 @@ footer {
         width: 28px;
         height: 28px;
         right: 11%;
-    }    
-    
-    .siteLogo {
-        width: 90px;
-    }
-
-    .menus ul li {
-        font-size: 14px;
-    }
-
-    #contactBtn {
-        font-size: 12px;
-        padding: 8px 32px;
-    }
-
-    #contactBtn:hover {
-        padding: 8px 45px;
     }
 
     .unlockYour {
@@ -1124,10 +1014,6 @@ footer {
         font-weight: 600;
     }
 
-    .navMenu {
-        flex: 3;
-    }
-
     .abtUsTextsContainer h1 {
         font-size: 25px;
     }
@@ -1150,88 +1036,16 @@ footer {
 
 
 
+
+
+
+
+
+
+
+
 @media (max-width: 1000px) {
-    .headerContainer {
-        display: block;
-        width: 95%;
-        height: 8vh;
-    }
-
-    .burgerContainer {
-        display: flex;
-    }
-
-    .logo {
-        width: 95%;
-        margin: auto;
-        height: 100%;
-    }
-
-    .hamburger {
-        display: block;
-        width: 35px;
-        transition-duration: .3s;
-    }
-
-    .hamburger:hover {
-        cursor: pointer;
-        transition-duration: .3s;
-    }
-
-    .rotate {
-        transform: rotate(225deg);
-    }
-
-    .siteLogo {
-        width: 85px;
-    }
-
-    .navMenu {
-        background-color: black;
-        width: 0%;
-        position: absolute;
-        right: 0;
-        display: block;
-        height: 50vh;
-        padding-top: 88px;
-        padding-left: 0px;
-        overflow: hidden;
-        transition-duration: .3s;
-        z-index: 20;
-    }
-
-    .showNav {
-        display: block;
-        transition-duration: .3s;
-        width: 45%;
-        padding-left: 26px;
-    }
-
-    .menus ul {
-        flex-direction: column;
-        gap: 37px;
-    }
-
-    .menus ul a {
-        text-decoration: none;
-        color: white;
-    }
-
-    .menus ul li {
-        font-size: 14px;
-        color: white;
-    }
-
-    #contactBtn {
-        margin-top: 37px;
-        border-radius: 0px;
-        font-size: 12px;
-        padding: 8px 28px
-    }
-
-    #contactBtn:hover {
-        padding: 8px 28px
-    }
+    
 
     .ServicesElContainer {
         grid-template-columns: 1fr 1fr;
