@@ -860,94 +860,6 @@ body {
 
 
 
-/* Footer styling */
-footer {
-    width: 100%;
-    height: 200px;
-    background-color: #2e2e2e;
-    color: white;
-    padding: 120px 0px;
-    position: relative;
-}
-
-.footerCont {
-    width: 60%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40%;
-}
-
-.leftFooterCont {
-    line-height: 1.6;
-    flex: 2;
-}
-
-.leftFooterCont h1 {
-    font-size: 42px;
-}
-
-.leftFooterCont p {
-    font-size: 14px;
-    line-height: 1.5em;
-    font-weight: 300;
-    color: rgb(150, 150, 161);
-}
-
-.leftFooterCont img {
-    width: 36px;
-    height: 36px;
-    margin-top: 15px;
-}
-
-.rightFooterCont {
-    flex: 1.5;
-    line-height: 30px;
-}
-
-.quickLinksCon {
-    display: flex;
-    flex-direction: column;
-}
-
-.quickLinksTitle span {
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.quickLinksCon a {
-    color: white;
-    font-size: 15px;
-    border-top: 1px solid white;
-}
-
-.quickLinksCon a:hover {
-    color: #ff8c3f;
-}
-
-.copyrightCont {
-    width: 100%;
-    height: 35px;
-    background-color: #000000;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.copyrightCont p {
-    color: white;
-    font-size: 12px;
-    font-weight: 200;
-}
-
-
-
-
-
 
 
 
@@ -1045,8 +957,6 @@ footer {
 
 
 @media (max-width: 1000px) {
-    
-
     .ServicesElContainer {
         grid-template-columns: 1fr 1fr;
     }
@@ -1316,48 +1226,7 @@ footer {
 
 
 
-    /* footer mobile styling */
-    footer {
-        height: 500px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footerCont {
-        width: 80%;
-        flex-direction: column;
-        gap: 80px;
-    }
-
-    .leftFooterCont {
-        flex: 1;
-    }
-
-    .leftFooterCont h1 {
-        font-size: 30px;
-    }
-
-    .leftFooterCont img {
-        width: 25px;
-        height: 25px;
-    }
-
-    .rightFooterCont {
-        width: 100%;
-        text-align: left;
-    }
-
-    .rightFooterCont span {
-        font-size: 18px;
-    }
-
-    .rightFooterCont a {
-        font-size: 14px;
-    }
-
-
-
-}
+    
 
 
 
