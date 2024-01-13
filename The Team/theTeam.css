@@ -201,6 +201,22 @@ body {
 
 
 @media (max-width: 700px) {
+    .stf1 {
+        animation: slideIn1 .4s ease;
+    }
+    
+    .stf2 {
+        animation: none;
+    }
+    
+    .stf3 {
+        animation: none;
+    }
+    
+    .stf4 {
+        animation: none;
+    }
+
     .teamTitle {
         margin-top: 50px;
         font-size: 25px;
@@ -237,12 +253,6 @@ body {
 
     .staffCont {
         margin-top: 30px;
-    }
-
-    .theTeamContainer2 {
-        display: block;
-        width: 100%;
-        background-color: red;
         height: 500px;
     }
 
