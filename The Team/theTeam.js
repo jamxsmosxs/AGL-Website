@@ -32,6 +32,7 @@ document.querySelector(".burgerContainer").addEventListener("click", () => {
     navMenu.classList.toggle('showNav');
     navMenu.classList.toggle('fixed');
     teamShowNav.classList.toggle('hideTeamNav');
+    document.querySelector('body').classList.toggle("noScroll");
 })
 
 const staffImgs = document.querySelectorAll('.staffImg');

@@ -87,6 +87,10 @@
     cursor: pointer;
 }
 
+.noScroll {
+    height: 100%;
+    overflow-y: hidden;
+}
 
 /* Header Styling */
 .btnSmall {
@@ -795,7 +799,9 @@ body {
 .testimonial {
     width: 100%;
     padding: 150px 0px;
-    background-color: black;
+    background-color:black;
+    position: relative;
+    margin-bottom: 300px;
 }
 
 .testimonial .title {
@@ -816,7 +822,7 @@ body {
 }
 
 .testimonialCont {
-    width: 60%;
+    width: 50%;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -825,9 +831,10 @@ body {
 }
 
 .personsCont {
+    height: 100px;
     display: flex;
     background-color: #616161;
-    height: 150px;
+    padding: 0;
     border-radius: 10px;
     gap: 20px;
 }
@@ -845,13 +852,30 @@ body {
     left: 0;
     top: 0;
     rotate: 0deg;
-    /* background-image: url(./resources/img\ 1.jpg); */
     background-color: #fff;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: center center;
+    background-size: cover;
     transition-duration: .3s;
 }
+
+.imagee0 {
+    background-image: url(./resources/img\ 1.jpg);
+}
+
+/* .imagee1 {
+    background-image: url(./resources/img\ 2.jpg);
+} */
+
+.imagee2 {
+    background-image: url(./resources/img\ 2.jpg);
+}
+
+.imagee3 {
+    background-image: url(./resources/img\ 3.png);
+}
+
 
 .personImg div:hover {
     rotate: 4deg;
@@ -886,7 +910,14 @@ body {
 }
 
 
-
+.colorLine {
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #fff 0, #fff 33%, rgb(0, 0, 105) 33%, rgb(0, 0, 105) 66%, #FE6600 66%, #FE6600 100%);
+}
 
 
 
@@ -951,11 +982,11 @@ body {
     }
 
     .testimonialCont {
-        width: 70%;
+        width: 50%;
     }
 
     .personsCont {
-        height: 130px;
+        padding: 0;
     }
 
     .personDetail {
@@ -1009,6 +1040,14 @@ body {
     .btnMedium {
         font-size: 14px;
         padding: 12px 50px;
+    }
+
+    .hero {
+        height: 82vh;
+    }
+
+    .testimonialCont {
+        width: 60%;
     }
 }
 
@@ -1345,28 +1384,9 @@ body {
 
 
 
-/* @media (max-width: 550px) {
-    .bpContainer {
-        display: block;
+@media (max-width: 550px) {
+    .allCont h1 {
+        font-size: 45px;
+        font-weight: 600;
     }
-
-    .brands {
-        width: 65%;
-        margin: auto;
-    }
-
-    .potential {
-        width: 75%;
-        margin: auto;
-    }
-
-    .brands span, .potential span {
-        font-size: 50px;
-        font-weight: 700;
-    }
-
-    .PotentialText, .BrandsText {
-        font-size: 50px;
-        font-weight: 700;
-    }
-} */
+}

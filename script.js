@@ -40,7 +40,7 @@ document.querySelector(".burgerContainer").addEventListener("click", () => {
     document.querySelector(".bottom").classList.toggle("bottomRotate");
     navMenu.classList.toggle('showNav');
     activeNavBackground.classList.toggle('hidden');
-    navMenu.classList.toggle('fixed');
+    document.querySelector('body').classList.toggle("noScroll");
 })
 
 // Brand's Potential Text on Home page highlight hover
