@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
 }
 
@@ -115,20 +115,20 @@
 
 .btnMedium {
     margin-top: 40px;
-    font-size: 20px;
+    font-size: 18px;
     background-color: #FE6600;
     color: white;
     font-weight: 400;
     border: none;
     border-radius: 14px;
     transition-duration: .3s;
-    padding: 15px 58px;
+    padding: 12px 50px;
 }
 
 .btnMedium:hover {
     cursor: pointer;
     transition-duration: .3s;
-    padding: 14px 80px;
+    padding: 12px 70px;
     color: #FE6600;
     border: 1px solid #FE6600;
     background: none;
@@ -153,9 +153,10 @@ body {
     position: relative;
     width: 100%;
     height: 90vh;
-    /* background-image: url(./resources/1920\ x\ 1080\ background\ Img.svg);
+    background-image: url(./resources/Hero\ Background.svg);
     background-repeat: no-repeat;
-    background-size: cover; */
+    background-size: cover;
+    background-position: center center;
 }
 
 .navMenuActive {
@@ -182,7 +183,7 @@ body {
 
 .allCont {
     width: 100%;
-    margin-top: -50px;
+    margin-top: -30px;
     animation: abtUsSlide .8s ease;
 }
 
@@ -196,9 +197,9 @@ body {
 }
 
 .allCont h1 {
-    font-size: 80px;
-    font-weight: 500;
-    color: #000000;
+    font-size: 70px;
+    font-weight:600;
+    color: #fff;
 }
 
 .mainTexts {
@@ -215,27 +216,32 @@ body {
     z-index: 1;
 }
 
-.highlight {
+.brandsText h1 {
+    color: #FE6600;
+}
+
+/* .highlight {
     background-color:#ff8737;
     width: 100%;
     position: absolute;
     bottom: 0px;
-}
+} */
 
-.br, .pt {
+/* .br, .pt {
     height: 40px;
     transition-duration: .4s;
-}
+} */
 
-.potn, .bran {
+/* .potn, .bran {
     position: absolute;
     bottom: 0px;
-}
+} */
 
 .heroContainer p {
-    font-size: 28px;
-    font-weight: 500;
-    margin-top: 19px;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 10px;
+    color: #fff;
 }
 
 @keyframes slideDown {
@@ -255,7 +261,7 @@ body {
     width: 30px;
     height: 54;
     position: absolute; 
-    bottom: 50px;
+    bottom: 140px;
     left: 50%;
     margin-bottom: 1px;
     transition-duration: .3s;
@@ -286,11 +292,11 @@ body {
 
 .aboutUs {
     width: 100%;
-    height: 100vh;
-    background-color: #fff4ec;
+    background-color: #fff;
     display: flex;
     align-items: center;
     position: relative;
+    margin-bottom: 150px;
 }
 
 .lineTriangle1 {
@@ -310,13 +316,12 @@ body {
 }
 
 .aboutUsContainer {
-    width: 80%;
+    width: 60%;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff4ec;
-    gap: 30px;
+    gap: 40px;
 }
 
 .abtUsImgContainer {
@@ -324,30 +329,33 @@ body {
 }
 
 .abtUsImg {
-    width: 100%;
+    width: 90%;
+    float: right;
     animation: slideRight .5s ease-out;
+    margin-top: -7px;
 }
 
 .abtUsTextsContainer {
-    flex: 1;
-    padding-left: 74px;
+    flex: 1.2;
     animation: slideDown .5s ease-out;
 }
 
 .abtUsTextsContainer h1 {
+    font-family: 'Bilbo Swash Caps', cursive;
     font-size: 32px;
-    color: #131313;
+    font-weight: 600;
+    color: #000000;
     margin-bottom: 5px;
 }
 
 .lineIcon {
-    width: 192px;
+    width: 150px;
     margin-bottom: 15px;
 }
 
 .abtUsTextsContainer p {
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 400;
     line-height: 27px;
 }
 
@@ -383,77 +391,94 @@ body {
     }
 }
 
+.abtUSLearnMoreBtn {
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #FE6600;
+    margin-top: 30px;
+    border: none;
+    padding: 12px 40px;
+    color: white;
+    transition-duration: .3s;
+    border-radius: 5px;
+}
+
+.abtUSLearnMoreBtn:hover {
+    background: none;
+    border: 1px solid #FE6600;
+    color: #FE6600;
+    cursor: pointer;
+    padding: 11px 50px;
+    transition-duration: .3s;
+    font-weight: 500;
+}
+
 .mobileTitle {
     display: none;
 }
 
 
+.webPic {
+    display: block;
+}
+
+.mobilePic {
+    display: none;
+}
+
+.mobileTitle h1 {
+    font-family: 'Bilbo Swash Caps', cursive;
+}
 
 
 
 
 
 
-/* .coreValues {
+
+/* .coreValues */
+.coreValues {
     width: 100%;
-    height: 100vh;
+    margin: auto;
+    /* background-color: #020524; */
+    background-color: black;
+    padding: 100px 0px;
     position: relative;
 }
 
-.secTitle {
-    width: 100%;
-    height: 50vh;
-    background-image: url(./resources/Core\ Values\ Images.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.valuesTitle {
+    font-family: 'Bilbo Swash Caps', cursive;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 32px;
+    font-weight: 600;
 }
 
-.secTitle h1 {
-    color: white;
-    font-weight: 500;
-    font-size: 50px;
-    letter-spacing: 40px;
-}
-
-.cvContentCon {
-    width: 70%;
+.valuesCont {
+    width: 60%;
     margin: auto;
-    display: grid;
-    grid-auto-flow: column;
-    margin-top: 150px;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-}
-
-.cvIcon {
-    width: 120px;
-    height: 120px;
-    border-radius: 100%;
-    background: none;
-    border: 3px solid #0C0E23;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 50px;
 }
 
-.cvIcon img {
-    width: 65px;
+.valueIcon {
+    fill: white;
 }
 
-.content h1 {
-    font-weight: 000;
-    font-size: 20px;
-} */
+.valueIcon:nth-of-type(1), .valueIcon:nth-of-type(5) {
+    width: 60px;
+}
 
+.valueIcon:nth-of-type(2), .valueIcon:nth-of-type(4) {
+    width: 70px;
+}
+
+.valueIcon:nth-of-type(3) {
+    width: 90px;
+}
 
 
 
@@ -475,6 +500,7 @@ body {
 }
 
 .servicesTitle {
+    font-family: 'Bilbo Swash Caps', cursive;
     font-size: 32px;
     margin-bottom: 5px;
     color: #131313;
@@ -676,8 +702,10 @@ body {
 }
 
 .brandsContainer h1 {
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-size: 32px;
     color: white;
-    margin-bottom: 8px;
+    margin-bottom: 2px;
 }
 
 .brandsContainer p {
@@ -916,7 +944,7 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-    background-image: linear-gradient(to right, #fff 0, #fff 33%, rgb(0, 0, 105) 33%, rgb(0, 0, 105) 66%, #FE6600 66%, #FE6600 100%);
+    background-image: linear-gradient(to right, #fff 0, #fff 33%, rgb(0, 0, 143) 33%, rgb(0, 0, 143) 66%, #FE6600 66%, #FE6600 100%);
 }
 
 
@@ -924,6 +952,61 @@ body {
 
 
 
+
+
+
+
+/* Contact Us Section */
+.contactUs {
+    width: 100%;
+    padding: 150px 0px;
+}
+
+.contactUsCont {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+form h3 {
+    color: gray;
+    font-weight: 800;
+    margin-bottom: 20px
+}
+
+form input, form textarea {
+    border: 0;
+    margin: 10px 0px;
+    padding: 20px;
+    outline: none;
+    background-color: #f5f5f5;
+    font-size: 16px;
+}
+
+form button {
+    padding: 15px;
+    background-color: #FE6600;
+    color: white;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
 
 
 
@@ -1043,7 +1126,7 @@ body {
     }
 
     .hero {
-        height: 82vh;
+        height: 90vh;
     }
 
     .testimonialCont {
@@ -1102,11 +1185,6 @@ body {
         background-image: url(./resources/Greetings\ mobile.jpg);
         background-position: center center;
         background-size: contain;
-    }
-
-    .forHero {
-        width: 60px !important;
-        height: 60px !important;
     }
 
     
@@ -1227,11 +1305,20 @@ body {
 
     .mobileTitle {
         display: block;
+        margin-top: 100px;
+    }
+
+    .webPic {
+        display: none;
+    }
+
+    .mobilePic {
+        display: block;
     }
 
     .mobileTitle h1 {
-        margin-bottom: 10px;
-        font-size: 26px;
+        margin-bottom: 5px;
+        font-size: 28px;
     }
 
     .lineIcon {
@@ -1242,7 +1329,7 @@ body {
 
     /* Our Services Section */
     .servicesTitle {
-        font-size: 26px;
+        font-size: 28px;
     }
     
 
@@ -1265,11 +1352,12 @@ body {
     }
 
     .titleDesc {
-        font-size: 18px;
+        font-size: 16px;
+        margin-top: -20px;
     }
 
     .itemCont h1 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .itemCont p {
@@ -1289,6 +1377,10 @@ body {
     /* Our Brands */
     .brandsContainer {
         width: 80%;
+    }
+
+    .brandsContainer h1 {
+        font-size: 28px;
     }
 
     .brandsLogosCont {
@@ -1311,6 +1403,11 @@ body {
     /* All Brands */
     .allBrandsCont {
         width: 90%;
+    }
+
+    .allBrands h1 {
+        font-family: 'Bilbo Swash Caps', cursive;
+        font-size: 28px;
     }
 
     .brandsLogo {

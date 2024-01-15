@@ -79,3 +79,17 @@ const closeAllBrands = document.getElementById("closeAllBrands");
 closeAllBrands.addEventListener('click', () => {
     document.querySelector(".allBrands").classList.add("hiddenn");
 })
+
+
+
+const sendEmail = () => {
+    Email.send({
+        SecureToken : "6d40475d-57ed-467f-b0b6-1b220f38fade",
+        To : 'jamesmoses262@gmail.com',
+        From : 'jamxsmosxs@gmail.com',
+        Subject : "This is the subject",
+        Body : "And this is the body"
+    }).then(
+      message => alert(message)
+    );
+}

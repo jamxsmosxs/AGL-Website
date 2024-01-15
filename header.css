@@ -200,6 +200,10 @@ header {
     .navMenu {
         flex: 3;
     }
+
+    header {
+        height: 10vh;
+    }
 }
 
 
@@ -219,7 +223,7 @@ header {
     .headerContainer {
         display: block;
         width: 95%;
-        height: 8vh;
+        height: 100%;
     }
 
     .burgerContainer {
