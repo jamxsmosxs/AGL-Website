@@ -20,6 +20,8 @@ xmasContainer.addEventListener("click", () => {
 })
 
 
+
+
 const hamburger = document.querySelector(".burgerContainer");
 const navMenu = document.querySelector(".navMenu");
 const brandsText = document.querySelector(".brandsText");
@@ -32,6 +34,12 @@ const abtUsSection = document.querySelector(".aboutUs");
 const mediaPlacementBtn = document.getElementById("mediaPlcment");
 const moreMediaPlacement = document.querySelector(".mediaPlacement");
 const closeMediaPlacement = document.getElementById("closeMediaPlacement");
+const downloadProfile = document.getElementById('contactBtn');
+
+
+downloadProfile.addEventListener('click', () => {
+    window.location.href = 'https://download1073.mediafire.com/lahhs6aur5lgR1jqz1cq3ToYiUocxsshd6Tcv4ehJ8Yj1QNkQC8GahddZnJuqsvAqaDqOlbHjHFvylxDOJxGDh7280vRuIVRfQq343up_pDnBzkv3nrefgjbnxL174AL931URzzR8aX4cjyBylRo3bQN_0N3SUIU0_gsBJz-qSFA3w/zjkfvpxp72drtuc/AGL+Profile+NEW1.pdf'
+})
 
 
 document.querySelector(".burgerContainer").addEventListener("click", () => {
@@ -82,14 +90,15 @@ closeAllBrands.addEventListener('click', () => {
 
 
 
+
 const sendEmail = () => {
     Email.send({
         SecureToken : "6d40475d-57ed-467f-b0b6-1b220f38fade",
         To : 'jamesmoses262@gmail.com',
-        From : 'jamxsmosxs@gmail.com',
-        Subject : "This is the subject",
-        Body : "And this is the body"
+        From : document.getElementById('email').value,
+        Subject : "New Enquiry From AGL Website",
+        Body : ``
     }).then(
-      message => alert(message)
+      message => document.querySelector('.formMessage').classList.remove('hiddenn')
     );
 }
