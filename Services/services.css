@@ -20,8 +20,9 @@
 
 .services {
     width: 100%;
-    height: 90vh;
+    height: 84vh;
     background-color: white;
+    padding-bottom: 19px;
 }
 
 .mainCont {
@@ -87,7 +88,6 @@
 
 .mediaPlacementCont {
     width: 100%;
-    height: 100%;
 }
 
 .dashboard {
@@ -105,3 +105,117 @@
     background-position: center center;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    width: 100%;
+    height: 4vh;
+    background-color: #0C0E23;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-family: montserrat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+    .mainCont {
+        width: 90%;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .sideNav {
+        width: 100%;
+        border: none;
+        flex: 1;
+    }
+
+    .content {
+        width: 100%;
+        flex: 6;
+    }
+
+    .btnCont {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1px;
+        margin-top: 20px;
+    }
+
+    .btn {
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #fad3b9;
+        border: none;
+    }
+
+    .aactive {
+        background-color: #FE6600;
+        color: white;
+    }
+
+    .dashboard {
+        height: 150px;
+        font-size: 12px;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .footer p {
+        font-size: 10px;
+    }
+}
