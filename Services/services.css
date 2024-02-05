@@ -32,6 +32,7 @@
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    overflow: hidden;
 }
 
 .sideNav {
@@ -103,9 +104,29 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    animation: dashboard .5s ease;
+}
+
+.inactive {
+    display: none;
+}
+
+.mainActive {
+    display: block;
 }
 
 
+@keyframes dashboard {
+    0% {
+        opacity: 0%;
+        margin-top: -100px;
+    }
+
+    100% {
+        margin-top: 0px;
+        opacity: 100%;
+    }
+}
 
 
 
