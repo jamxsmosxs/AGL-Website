@@ -100,11 +100,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: dashboard .5s ease;
+}
+
+.mpDash {
     background-image: url(../resources/Hero\ Background.svg);
+    /* background-color: #0C0E23; */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    animation: dashboard .5s ease;
+}
+
+.consDash {
+    background-image: url(../resources/Consultancy\ BG.svg);
+    background-color: #0C0E23;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.actiDash {
+    background-image: url(../resources/Activation\ BG.svg);
+    background-color: #0C0E23;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .inactive {
@@ -188,6 +208,8 @@
         width: 100%;
         border: none;
         flex: 1;
+        z-index: 1;
+        background-color: white;
     }
 
     .content {
